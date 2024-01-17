@@ -1,0 +1,858 @@
+/*FONTS*/
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf) format(TrueType);
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf) format(TrueType);
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averia Serif Libre';
+    src: url('../fonts/averia_serif_libre/averiaseriflibre-bold-webfont.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averia Serif Libre';
+    src: url('../fonts/averia_serif_libre/averiaseriflibre-bolditalic-webfont.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averia Serif Libre';
+    src: url('../fonts/averia_serif_libre/averiaseriflibre-italic-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averia Serif Libre';
+    src: url('../fonts/averia_serif_libre/averiaseriflibre-light-webfont.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averia Serif Libre';
+    src: url('../fonts/averia_serif_libre/averiaseriflibre-lightitalic-webfont.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averia Serif Libre';
+    src: url('../fonts/averia_serif_libre/averiaseriflibre-regular-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*VARIABLES*/
+
+html{
+    --background:#FFF9EE;
+    --light-orange:#F28F3B;
+    --dark-orange:#D06C58;
+    --grey-blue:#5D9292;
+    --dark-text:#222222;
+    --Averia: 'Averia Serif Libre',Times, serif;
+    --Montserrat: 'Montserrat', Arial, sans-serif;
+    --rhythm: 5vw;
+}
+
+/*COLOR CHANGES, FILLS, ETC.*/
+
+.light-orange{
+    fill: var(--light-orange);
+    background-color: var(--light-orange);
+}
+
+.dark-orange{
+    fill: var(--dark-orange);
+    background-color: var(--dark-orange);
+}
+
+/*
+*Filter over SVG to change colors
+*Generator here: https://codepen.io/sosuke/pen/Pjoqqp
+*/
+
+.black-to-dark-orange{
+    filter: invert(84%) sepia(37%) saturate(4386%) hue-rotate(310deg) brightness(78%) contrast(111%);
+}
+
+.black-to-light-orange{
+    filter: invert(60%) sepia(49%) saturate(651%) hue-rotate(342deg) brightness(96%) contrast(98%);
+}
+
+.black-to-grey-blue{
+    filter: invert(52%) sepia(25%) saturate(479%) hue-rotate(131deg) brightness(97%) contrast(90%);
+}
+
+.grey-blue{
+    fill:var(--grey-blue);
+    background-color: var(--grey-blue);
+}
+
+.light-orange-text{
+    color: var(--light-orange);
+}
+
+.dark-orange-text{
+    color: var(--dark-orange);
+}
+
+
+
+/*GENERAL CSS RULES*/
+
+*{
+    color: var(--dark-text);
+    max-width: 100%
+}
+
+body {
+    background-color: var(--background);
+}
+
+footer{
+    height: 15vw;
+}
+
+h1 {
+    font-family: var(--Averia);
+    font-size: 17.4vw; /*~68px on mobile*/
+    font-style: italic;
+    font-weight: 700;
+}
+
+h2{
+    font-family: var(--Averia);
+    font-size: 14vw; /*~54.5px on mobile*/
+    font-style: italic;
+    font-weight: 700;
+    margin: 1vw 5vw;
+}
+
+h3{
+    font-family: var(--Averia);
+    font-size: 10.5vw; /*~43px on mobile*/
+    font-style: italic;
+    font-weight: 700;
+    margin: 20vw 1vw 5vw 1vw;
+}
+
+h4 {
+    font-family: var(--Montserrat);
+    font-size: 7vw; /*~28px on mobile*/
+    font-style: normal;
+    font-weight: 500;
+    margin: 3vw;
+}
+
+h5{
+    font-family: var(--Averia);
+    font-size: 5.1vw; /*~23px on mobile*/
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    font-family: var(--Montserrat);
+    font-size: 4.1vw; /*~16px on mobile*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+section p, section h5{
+    margin: var(--rhythm);
+}
+
+p.snippit{
+    font-family: var(--Montserrat);
+    font-size: 4.6vw; /*~18px on mobile*/
+    font-weight: 500;
+    letter-spacing: -0.064vw;
+    margin: 0 2vw;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+video{
+    background-color: #DDDDDD;
+    border-radius: var(--rhythm);
+    height: 60vw;
+    margin-top: 15vw;
+    width: 90vw;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.italic{
+    font-style: italic;
+}
+
+div ul{
+    color: var(--dark-text);
+    font-family: var(--Montserrat);
+    font-size: 4.1vw; /*~16px on mobile*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-right: var(--rhythm);
+    text-align: left;
+}
+
+div.contents{
+    color: var(--dark-text);
+    display: flex;
+    font-family: var(--Montserrat);
+    font-size: 5vw; /*~20px on mobile*/
+    font-style: normal;
+    font-weight: 400;
+    flex-direction: column;
+    line-height: 200%;
+    list-style-type: none;
+    margin-top: 5vw;
+    text-align: left;
+}
+
+a.in-text-link{
+    color: var(--grey-blue);
+    text-decoration: underline;
+}
+
+
+
+/*ALIGNMENT*/
+
+.left-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.right-align{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    text-align: right;
+}
+
+.center{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*PAGE HEADERS*/
+
+.long-img{
+    border-radius: 50vw;
+    width: 80vw;
+    z-index: -2;
+}
+
+div.page-title img{
+    position: absolute;
+    left:0;
+    top:-15vw;
+    width: 26vw;
+    z-index: -1;
+}
+
+div.page-title img.left-dot{
+    transform: scaleX(-1);
+    left: 80vw;
+    top:-35vw;
+    width: 20vw;
+    z-index: -3;
+}
+
+div.page-title img.med-dot{
+    top:-12vw;
+    width: 20vw;
+}
+
+div.page-title{
+    align-self: flex-start;
+    margin-top: -5vw;
+    position: relative;
+}
+
+.common-header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.sub-header-left{
+    align-self: flex-start;
+    margin-left: 7vw;
+}
+
+div.header-space{
+    margin-top: 42vw;
+}
+
+/*BUTTON LOGISTICS*/
+
+.button{
+    border-color: var(--background);
+    border-radius: 20vw;
+    border-style: solid;
+    border-width: 2vw;
+    color: var(--background);
+    margin: 3vw;
+    padding: 4vw;
+}
+
+.arrow-button{
+    font-family: var(--Montserrat);
+    font-size: 12vw;
+    font-weight:600;
+    line-height: 8vw;
+    text-align: center;
+}
+
+div.left-align a.button, div.right-align a.button {
+    margin-top: 1vw;
+    margin-bottom: 0;
+    padding-bottom: 5.5vw;
+    text-decoration: none;
+    width: 9.5vw;
+}
+
+a.light-orange:hover{
+    background-color: var(--background);
+    border-color: var(--light-orange);
+    color: var(--light-orange);
+    transition: 100ms;
+}
+
+a.dark-orange:hover{
+    background-color: var(--background);
+    border-color: var(--dark-orange);
+    color: var(--dark-orange);
+    transition: 100ms;
+}
+
+a.grey-blue:hover{
+    background-color: var(--background);
+    border-color: var(--grey-blue);
+    color: var(--grey-blue);
+    transition: 100ms;
+}
+
+.back-to-top{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vw;
+    margin-top: 5vw;
+    position: relative;
+}
+
+.back-to-top-circle{
+    width: 14vw;
+}
+.back-to-top div img{
+    width: 7vw;
+}
+.back-to-top div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2vw;
+}
+.back-to-top h5{
+    margin: 0;
+}
+
+
+
+/*CHECKBOX NAVIGATION*/
+
+.nav-logo{
+    width: 20vw;
+}
+
+.overlay {
+    align-items: center;
+    background-color: var(--background);
+    display: flex;
+    height: 20vw;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 3;
+}
+
+.overlay > label {
+    cursor: pointer;
+    height: 9vw;
+    left: 0;
+    margin-left: 4vw;
+    position: absolute;
+    width: 15vw;
+
+}
+
+.nav-links {
+    background-color: var(--background);
+    border-radius: 0vw 0vw 10vw 10vw;
+    box-sizing: border-box;
+    color: var(--dark-text);
+    filter: drop-shadow(0vw 6vw 6vw rgba(0, 0, 0, 0.40));
+    font-family: var(--Averia);
+    font-size: 8vw;
+    font-style: italic;
+    font-weight: 700;
+    list-style-type: none;
+    padding: 5vw;
+    padding-left: 10vw;
+    position: absolute;
+    top: -160vw;
+    transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    z-index: 2;
+}
+
+.nav-links li {
+    list-style-type: none;
+    margin: 4.5vw 0;
+}
+
+.nav-links li a {
+    color: var(--dark-text);
+    display: block;
+    text-decoration: none;
+}
+
+#toggle {
+    position: absolute;
+    visibility: hidden;
+}
+
+#toggle:checked ~ .nav-links {
+    top: 10vw;
+}
+
+nav{
+    margin-bottom: 30vw;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.little-circle{
+    position: absolute;
+    left: -4vw;
+    top: -2vw;
+    width: 13vw;
+    z-index: -3;
+}
+
+
+
+/* Home Page & Case Study Page */
+
+.home-project-title{
+    margin-left: 7vw;
+    margin-top: -1vw;
+}
+
+.home-header-img{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30vw;
+    position: relative;
+    z-index: -4;
+}
+
+.round-img{
+    width: 64vw;
+}
+
+.rounded-text{
+    position: absolute;
+    top: -15vw;
+    width: 68vw;
+}
+
+.big-logo{
+    position: absolute;
+    left: 3vw;
+    top: 20vw;
+    width: 54vw;
+}
+
+.case-study{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-top: 20vw;
+}
+
+.case-study > div{
+    width: 40vw;
+}
+
+div.left-align > h2{
+    font-size: 10vw;
+    line-height: 9vw;
+    margin: 1vw;
+}
+
+div.right-align > h2{
+    font-size: 8vw;
+    margin: 1vw;
+}
+
+.case-study > img.left{
+    align-self: flex-start;
+    filter: drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.40));
+    margin-left: 2vw;
+    margin-top: 5vw;
+    width: 53vw;
+}
+
+.case-study > img.right{
+    align-self: flex-start;
+    filter: drop-shadow(1vw 1vw 1vw rgba(0, 0, 0, 0.40));
+    margin-left: 1vw;
+    margin-top: 8vw;
+    width: 53vw;
+}
+
+.home-header-title{
+    align-self: center;
+    margin-top: -25vw;
+    margin-bottom: -5vw;
+    text-align: center;
+}
+
+.home-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 70vw;
+    position: relative;
+}
+
+.big-circle{
+    position: absolute;
+    right: 25vw;
+    top: 17vw;
+    width: 52vw;
+    z-index: -5;
+}
+
+
+
+/*PHOTOGRAPHY PAGE*/
+
+.photo-buttons{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30vw;
+    margin-top: 5vw;
+    padding: 4vw;
+}
+
+.photo-buttons a p{
+    color: var(--background);
+    font-family: var(--Montserrat);
+    font-size: 3.8vw;
+    font-weight: 600;
+    margin-top: -17vw;
+    text-align: center;
+}
+
+.photo-buttons img{
+    width: 28vw;
+}
+
+.ig-button{
+    align-items: center;
+    display: flex;
+    color: var(--background);
+    justify-content: center;
+    margin: auto;
+    width: 80vw;
+}
+
+.ig-icon{
+    width: 20vw;
+}
+
+.photo-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.photo-section img{
+    border-radius: 3vw;
+    margin: 2vw;
+    width: 90vw;
+}
+
+.vert-images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.vert-images img{
+    width: 43vw;
+}
+
+
+
+/*DESIGN & MEDIA*/
+
+.vid-title{
+    margin: 1vw;
+}
+.media-vid{
+    border-radius: 3vw;
+    filter: drop-shadow(0vw 2vw 2vw rgba(0, 0, 0, 0.40));
+    margin-top: 7vw;
+    width: 70vw;
+}
+
+.media-section{
+    margin: 10vw 0;
+    position: relative;
+    text-align: center;
+}
+
+.media-huge-circle{
+    position: absolute;
+    top: 0;
+    width: 90vw;
+    z-index: -6;
+}
+
+.media-item{
+    align-items: center;
+    display: flex;
+    margin: 5vw 0;
+}
+
+.media-item img{
+    border-radius: 3vw;
+    margin: 2vw;
+    width: 55vw;
+}
+
+.media-item div{
+    width: 43vw;
+}
+
+.media-item h5, .media-item p{
+    margin: 2vw;
+}
+
+
+
+/*CASE STUDIES*/
+
+.tiny-circle{
+    border-radius: 20vw;
+    color: var(--background);
+    font-size: 7vw;
+    padding: .5vw 2.75vw 1vw 2.75vw;
+}
+
+.huge-circle{
+    position: absolute;
+    top: 10vw;
+    width: 90vw;
+    z-index: -6;
+}
+
+.riv-wilm-circle{
+    top: 18vw;
+}
+
+.case-study-header img{
+    filter: drop-shadow(0vw 2vw 2vw rgba(0, 0, 0, 0.40));
+    margin-bottom: 0;
+    width: 92vw;
+}
+
+.case-study-header h2{
+    margin: 0;
+}
+
+.case-study-header p{
+    margin-bottom: 2vw;
+    margin-top: 0;
+}
+
+.case-study-header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+.case-study-header img{
+    margin-bottom: 5vw;
+}
+
+.case-study-sect img{
+    border-radius: var(--rhythm);
+    margin: 1vw var(--rhythm);
+    width: 90vw;
+}
+
+.horiz-align{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.case-study-button{
+    border-radius: 15vw;
+    font-family: var(--Montserrat);
+    font-size: 6vw;
+    font-weight: 500;
+    margin: 0;
+    padding: 6vw 8vw;
+    width: 55vw;
+}
+
+
+
+/*ABOUT*/
+
+#skill-icons{
+    margin-top: 12vw;
+}
+
+.skill-title{
+    position: relative;
+}
+
+.skill-icons{
+    display: flex;
+    margin-left: 1vw;
+}
+
+.skill-icons img{
+    height: 9vw;
+    margin: 2vw;
+    width: auto;
+}
+
+.skill-dot{
+    position: absolute;
+    right: 0;
+    top: -4vw;
+    transform: scaleX(-1);
+    width: 25vw;
+    z-index: -3;
+}
+
+.right-title{
+    position: absolute;
+    right: 4vw;
+    top: -2vw;
+    z-index: -2;
+}
+
+.in-touch{
+    margin-top: 30vw;
+}
+
+.in-touch-section{
+    display: flex;
+    position: relative;
+}
+
+.in-touch-section p{
+    margin: 10vw 5vw 2vw 0;
+}
+
+.vert-img{
+    border-radius: 30vw;
+    margin: 5vw;
+    width: 35vw;
+}
+
+.social-icons{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: -3vw;
+}
+
+.social-icons img{
+    margin: 4vw;
+    width: 13vw;
+}
+
+.about-dot{
+    left:0;
+    position: absolute;
+    top: 75vw;
+    width: 20vw;
+}
+
+
+
+/*RESUME*/
+
+.resume-header{
+    margin-bottom: 40vw;
+    position: relative;
+}
+
+.resume-dot{
+    position: absolute;
+    right: 0;
+    top: -8vw;
+    transform: scaleX(-1);
+    width: 50vw;
+    z-index: -10;
+}
+
+.download-button{
+    position: absolute;
+    right: 2vw;
+    top: 13vw;
+    width: 35vw;
+}
