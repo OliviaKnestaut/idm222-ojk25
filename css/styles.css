@@ -61,7 +61,7 @@
 html{
     --background:#FFF9EE;
     --light-orange:#F28F3B;
-    --dark-orange:#D06C58;
+    --rust-red:#D06C58;
     --grey-blue:#5D9292;
     --dark-text:#222222;
     --Averia: 'Averia Serif Libre',Times, serif;
@@ -76,9 +76,9 @@ html{
     background-color: var(--light-orange);
 }
 
-.dark-orange{
-    fill: var(--dark-orange);
-    background-color: var(--dark-orange);
+.rust-red{
+    fill: var(--rust-red);
+    background-color: var(--rust-red);
 }
 
 /*
@@ -86,7 +86,7 @@ html{
 *Generator here: https://codepen.io/sosuke/pen/Pjoqqp
 */
 
-.black-to-dark-orange{
+.black-to-rust-red{
     filter: invert(84%) sepia(37%) saturate(4386%) hue-rotate(310deg) brightness(78%) contrast(111%);
 }
 
@@ -107,8 +107,8 @@ html{
     color: var(--light-orange);
 }
 
-.dark-orange-text{
-    color: var(--dark-orange);
+.rust-red-text{
+    color: var(--rust-red);
 }
 
 
@@ -354,10 +354,10 @@ a.light-orange:hover{
     transition: 100ms;
 }
 
-a.dark-orange:hover{
+a.rust-red:hover{
     background-color: var(--background);
-    border-color: var(--dark-orange);
-    color: var(--dark-orange);
+    border-color: var(--rust-red);
+    color: var(--rust-red);
     transition: 100ms;
 }
 
@@ -580,16 +580,27 @@ div.right-align > h2{
 
 /*PHOTOGRAPHY PAGE*/
 
-.photo-buttons{
+.photo-button-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'nature architechture portrait';
+    justify-items: center;
     align-items: center;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30vw;
-    margin-top: 5vw;
-    padding: 4vw;
 }
 
-.photo-buttons a p{
+.photo-button-grid a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28vw;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+}
+
+.photo-button-grid a p{
     color: var(--background);
     font-family: var(--Montserrat);
     font-size: 3.8vw;
@@ -598,46 +609,46 @@ div.right-align > h2{
     text-align: center;
 }
 
-.photo-buttons img{
-    width: 28vw;
-}
-
-.ig-button{
+.photo-grid-left{
+    display: grid;
+    grid-template-columns: 44.87vw 44.87vw;
+    grid-template-rows: 60.26vw 67.18vw;
+    grid-template-areas:
+    'horiz horiz'
+    'vert-1 vert-2';
+    column-gap: 3vw;
+    row-gap: 4vw;
+    justify-items: center;
     align-items: center;
-    display: flex;
-    color: var(--background);
     justify-content: center;
-    margin: auto;
-    width: 80vw;
+    margin: 4vw 0;
 }
 
-.ig-icon{
-    width: 20vw;
-}
-
-.photo-section{
+.photo-grid-right{
+    display: grid;
+    grid-template-columns: 44.87vw 44.87vw;
+    grid-template-rows: 60.26vw 67.18vw;
+    grid-template-areas:
+    'horiz horiz'
+    'vert-1 vert-2';
+    column-gap: 3vw;
+    row-gap: 4vw;
+    justify-items: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.photo-section img{
-    border-radius: 3vw;
-    margin: 2vw;
-    width: 90vw;
+.horiz-img {
+    grid-area: horiz;
 }
 
-.vert-images{
-    display: flex;
-    justify-content: space-around;
+.vert-img-1 {
+    grid-area: vert-1;
 }
 
-.vert-images img{
-    width: 43vw;
+.vert-img-2 {
+    grid-area: vert-2;
 }
-
-
 
 /*DESIGN & MEDIA*/
 
