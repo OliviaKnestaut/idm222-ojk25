@@ -5,101 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/navigation.css">
     <title>Photography</title>
 </head>
 <body>
     <header>
 
-        <nav>
-            <div class="overlay">
-                <label for="toggle">
-                    <img src="images/home/Hamburger-Bars.svg" alt="Hamburger Menu">
-                </label>
-                <a id="top" class="nav-logo" href="index.html"><img src="images/home/OK-Logo.svg" alt="">
+        <nav class="menu">
+            <label for="tm" id="toggle-menu"><img class="drop-icon hamburger-bars" src="images/home/Hamburger-Bars.svg" alt=""></label>
+            <input type="checkbox" id="tm">
+            <ul class="main-menu">
+                <li class="nav-link">
+                    <a href="index.html">Portfolio 
+                    <span class="drop-icon"><img class="drop-icon up-arrow" src="images/Up-Arrow.svg" alt="Arrow to Open Dropdown"></span>
+                    <label title="Toggle Drop-down" class="drop-icon" for="sm1">
+                        <img class="drop-icon up-arrow" src="images/Up-Arrow.svg" alt="">
+                    </label>
                 </a>
-            </div>
-            <input type="checkbox" id="toggle" name="toggle">
-            <ul class="nav-links">
-                <li>
-                    <div class="nav-item">
-                        <a href="index.html">Portfolio</a>
-                        <svg class="little-circle" viewBox="0 0 50 50">
-                            <circle class="light-orange" cx="24.75" cy="24.75" r="24.75"/>
-                        </svg>
-                    </div>
-                    <ul id="sub-nav-1">
-                        <li>
-                            <div class="nav-item">
-                                <a href="case-studies.html">Case Studies</a>
-                                <svg class="little-circle" viewBox="0 0 50 50">
-                                    <circle class="grey-blue" cx="24.75" cy="24.75" r="24.75"/>
-                                </svg>
-                            </div>
-                            <ul class="sub-nav-2">
-                                <li>
-                                    <div class="nav-item">
-                                        <a href="tessera.html">Tessera</a>
-                                        <svg class="little-circle" viewBox="0 0 50 50">
-                                            <circle class="rust-red" cx="24.75" cy="24.75" r="24.75"/>
-                                        </svg>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="nav-item">
-                                        <a href="riverfront-wilmington.html">Riverfront Wilmington</a>
-                                        <svg class="little-circle" viewBox="0 0 50 50">
-                                            <circle class="light-orange" cx="24.75" cy="24.75" r="24.75"/>
-                                        </svg>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="nav-item">
-                                        <a href="best-fronds.html">Best Fronds</a>
-                                        <svg class="little-circle" viewBox="0 0 50 50">
-                                            <circle class="grey-blue" cx="24.75" cy="24.75" r="24.75"/>
-                                        </svg>
-                                    </div>
-                                </li>
-                            </ul>
+                <input type="checkbox" id="sm1">
+                <ul class="sub-menu">
+                    <li class="nav-link"><a href="case-studies.html">Case Studies
+                        <span class="drop-icon"><img class="drop-icon up-arrow" src="images/Up-Arrow.svg" alt="Arrow to Open Dropdown"></span>
+                        <label title="Toggle Drop-down" class="drop-icon" for="sm2"><img class="drop-icon up-arrow" src="images/Up-Arrow.svg" alt="Arrow to Open Dropdown"></label>
+                    </a>
+                    <input type="checkbox" id="sm2">
+                    <ul class="sub-menu sub-menu2">
+                        <li class="nav-link">
+                            <svg class="nav-dot grey-blue" viewBox="0 0 50 50" fill="none">
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                            </svg>
+                            <a href="tessera.html">Tessera</a>
                         </li>
-                        <li>
-                            <div class="nav-item">
-                                <a href="photography.html">Photography</a>
-                                <svg class="little-circle" viewBox="0 0 50 50">
-                                    <circle class="rust-red" cx="24.75" cy="24.75" r="24.75"/>
-                                </svg>
-                            </div>
-                        <li>
-                            <div class="nav-item">
-                                <a href="design-and-media.html">Design & Media</a>
-                                <svg class="little-circle" viewBox="0 0 50 50">
-                                    <circle class="light-orange" cx="24.75" cy="24.75" r="24.75"/>
-                                </svg>
-                            </div>
+                        <li class="nav-link">
+                            <svg class="nav-dot rust-red" viewBox="0 0 50 50" fill="none">
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                            </svg>
+                            <a href="riverfront-wilmington.html">Riverfront<br>Wilmington</a>
+                        </li>
+                        <li class="nav-link">
+                            <svg class="nav-dot light-orange" viewBox="0 0 50 50" fill="none">
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                            </svg>
+                            <a href="best-fronds.html">Best Fronds</a>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <div class="nav-item">
-                        <a href="about.html">About</a>
-                        <svg class="little-circle" viewBox="0 0 50 50">
-                            <circle class="grey-blue" cx="24.75" cy="24.75" r="24.75"/>
-                        </svg>
-                    </div>
-                </li>
-                <li>
-                    <div class="nav-item">
-                        <a href="resume.html">Resume</a>
-                        <svg class="little-circle" viewBox="0 0 50 50">
-                            <circle class="rust-red" cx="24.75" cy="24.75" r="24.75"/>
-                        </svg>
-                    </div>
+                    <span class="expand-dot2 light-orange"></span>
+                    <span class="expand-dot-longer rust-red"></span>
+    
                     </li>
-            </ul>
+                    <li class="nav-link">
+                        <svg class="nav-dot grey-blue" viewBox="0 0 50 50" fill="none">
+                            <circle cx="24.75" cy="24.75" r="24.75"/>
+                            <circle cx="24.75" cy="24.75" r="24.75"/>
+                        </svg>
+                        <a href="photography.html">Photography</a>
+                    </li>
+                    <li class="nav-link">
+                        <svg class="nav-dot rust-red" viewBox="0 0 50 50" fill="none">
+                            <circle cx="24.75" cy="24.75" r="24.75"/>
+                            <circle cx="24.75" cy="24.75" r="24.75"/>
+                        </svg>
+                        <a href="design-and-media.html">Design & Media</a>
+                    </li>
+                </ul>
+                <span class="expand-dot rust-red"></span>
+    
+                </li>
+                <li class="nav-link">
+                    <svg class="nav-dot grey-blue" viewBox="0 0 50 50" fill="none">
+                        <circle cx="24.75" cy="24.75" r="24.75"/>
+                        <circle cx="24.75" cy="24.75" r="24.75"/>
+                    </svg>
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-link"><svg class="nav-dot light-orange" viewBox="0 0 50 50" fill="none">
+                    <circle cx="24.75" cy="24.75" r="24.75"/>
+                    <circle cx="24.75" cy="24.75" r="24.75"/>
+                </svg>
+                <a href="resume.html">Resume</a>
+            </li>
+            </ul> 
         </nav>
         
         <div class="common-header">
-            <img class="long-img" src="images/home/photography/Photo-Header-Small.png" alt="">
+            <picture class="common-header">
+                <source
+                media="(min-width: 1200px)"
+                srcset="images/home/photography/Photo-Header-Large.png" />
+
+                <source
+                media="(min-width: 700px)"
+                srcset="images/home/photography/Photo-Header-Med.png" />
+
+                <img
+                src="images/home/photography/Photo-Header-Small.png"
+                alt="" />
+            </picture>
+            <svg class="left-dot-full" viewBox="0 0 239 240" fill="none">
+                <circle class="light-orange" cx="119.47" cy="119.594" r="119.47"/>
+            </svg>
+            <svg class="right-dot-full" viewBox="0 0 239 240" fill="none">
+                <circle class="grey-blue" cx="119.47" cy="119.594" r="119.47"/>
+            </svg>
+
             <div class="page-title">
                 <h2>Photography</h2>
                 <img class="black-to-grey-blue left-dot" src="images/Edge-Circle.svg" alt="">
@@ -132,27 +143,62 @@
 
             <div>
                 <div class="photo-grid-left">
-                    <img class="horiz-img" src="images/home/photography/nature/Yellowstone_Bison_2-Small.jpg" alt="Herd of bison grazing in Lamar Valley, Yellowstone National Park">
-                    <img class="vert-img-1" src="images/home/photography/nature/Mammoth_Springs_Small.jpg" alt="">
-                    <img class="vert-img-2" src="images/home/photography/nature/Yellowstone_Blacktail_Plateau-Small.jpg" alt="">
+                    <img class="horiz-img" srcset="images/home/photography/nature/Yellowstone_Bison_2-Small.jpg 1x,
+                                            images/home/photography/nature/Yellowstone_Bison_2-Large.jpg 2x"
+                                        src="images/home/photography/nature/Yellowstone_Bison_2-Small.jpg"
+                                        alt="Herd of bison grazing in Lamar Valley, Yellowstone National Park">
+                    <img class="vert-img-1" srcset="images/home/photography/nature/Mammoth_Springs_Small.jpg 1x,
+                                            images/home/photography/nature/Mammoth_Springs_Large.jpg 2x"
+                                        src="images/home/photography/nature/Yellowstone_Bison_2-Small.jpg"
+                                        alt="">
+                    <img class="vert-img-2" srcset="images/home/photography/nature/Yellowstone_Blacktail_Plateau-Small.jpg 1x,
+                                            images/home/photography/nature/Yellowstone_Blacktail_Plateau-Large.jpg 2x"
+                                        src="images/home/photography/nature/Yellowstone_Blacktail_Plateau-Small.jpg"
+                                        alt="">
                 </div>
                 <div class="photo-grid-right">
-                    <img class="horiz-img" src="images/home/photography/nature/Grand_Teton_Barn-Small.jpg" alt="Old barn in front of the Teton mountains">
-                    <img class="vert-img-1" src="images/home/photography/nature/Yellowstone_Hot_Springs-Small.jpg" alt="Colorful hot springs in Yellowstone National Park">
-                    <img class="vert-img-2" src="images/home/photography/nature/Oxbox_Bend-Small.jpg" alt="">
+                    <img class="horiz-img" srcset="images/home/photography/nature/Grand_Teton_Barn-Small.jpg 1x,
+                                            images/home/photography/nature/Grand_Teton_Barn-Large.jpg 2x"
+                                        src="images/home/photography/nature/Grand_Teton_Barn-Small.jpg"
+                                        alt="Old barn in front of the Teton mountains">
+                    <img class="vert-img-1" srcset="images/home/photography/nature/Yellowstone_Hot_Springs-Small.jpg 1x,
+                                            images/home/photography/nature/Yellowstone_Hot_Springs-Large.jpg 2x"
+                                        src="images/home/photography/nature/Yellowstone_Hot_Springs-Small.jpg"
+                                        alt="Colorful hot springs in Yellowstone National Park">
+                    <img class="vert-img-2" srcset="images/home/photography/nature/Oxbox_Bend-Small.jpg 1x,
+                                            images/home/photography/nature/Oxbox_Bend-Large.jpg 2x"
+                                        src="images/home/photography/nature/Oxbox_Bend-Small.jpg"
+                                        alt="">
                 </div>
                 <div class="photo-grid-left">
-                    <img class="horiz-img" src="images/home/photography/nature/Lake_Washington_Dogs_1-Small.jpg" alt="Black and White image of dogs playing at a beach on Lake Washington">
-                    <img class="vert-img-1" src="images/home/photography/nature/Mt_Rainier_Ascent-Small.jpg" alt="View up Mount Rainier along the trail to the summit">
-                    <img class="vert-img-2" src="images/home/photography/nature/Yellowstone_Bison_1-Small.jpg" alt="Lone bison grazing in Lamar Valley, Yellowstone National Park">
+                    <img class="horiz-img" srcset="images/home/photography/nature/Lake_Washington_Dogs_1-Small.jpg 1x,
+                                            images/home/photography/nature/Lake_Washington_Dogs_1-Large.jpg 2x"
+                                        src="images/home/photography/nature/Lake_Washington_Dogs_1-Small.jpg"
+                                        alt="Black and White image of dogs playing at a beach on Lake Washington">
+                    <img class="vert-img-1" srcset="images/home/photography/nature/Mt_Rainier_Ascent-Small.jpg 1x,
+                                            images/home/photography/nature/Mt_Rainier_Ascent-Large.jpg 2x"
+                                        src="images/home/photography/nature/Mt_Rainier_Ascent-Small.jpg"
+                                        alt="View up Mount Rainier along the trail to the summit">
+                    <img class="vert-img-2" srcset="images/home/photography/nature/Yellowstone_Bison_1-Small.jpg 1x,
+                                            images/home/photography/nature/Yellowstone_Bison_1-Large.jpg 2x"
+                                        src="images/home/photography/nature/Yellowstone_Bison_1-Small.jpg"
+                                        alt="Lone bison grazing in Lamar Valley, Yellowstone National Park">
                 </div>
                 <div class="photo-grid-right">
-                    <img class="horiz-img" src="images/home/photography/nature/Grand_Teton_Horses-Small.jpg" alt="Horses grazing in front of the Teton mountains">
-                    <img class="vert-img-1" src="images/home/photography/nature/Olympic_Hurricane_Ridge-Small.jpg" alt="View from the top of Hurricane Ridge in Olympic National Park">
-                    <img class="vert-img-2" src="images/home/photography/nature/Lake_Washington_Dogs_2-Small.jpg" alt="Black and White image of dogs playing at a beach on Lake Washington">
+                    <img class="horiz-img" srcset="images/home/photography/nature/Grand_Teton_Horses-Small.jpg 1x,
+                                            images/home/photography/nature/Grand_Teton_Horses-Large.jpg 2x"
+                                        src="images/home/photography/nature/Grand_Teton_Horses-Small.jpg"
+                                        alt="Horses grazing in front of the Teton mountains">
+                    <img class="vert-img-1" srcset="images/home/photography/nature/Olympic_Hurricane_Ridge-Small.jpg 1x,
+                                            images/home/photography/nature/Olympic_Hurricane_Ridge-Large.jpg 2x"
+                                        src="images/home/photography/nature/Olympic_Hurricane_Ridge-Small.jpg"
+                                        alt="View from the top of Hurricane Ridge in Olympic National Park">
+                    <img class="vert-img-2" srcset="images/home/photography/nature/Lake_Washington_Dogs_2-Small.jpg 1x,
+                                            images/home/photography/nature/Lake_Washington_Dogs_2-Large.jpg 2x"
+                                        src="images/home/photography/nature/Lake_Washington_Dogs_2-Small.jpg"
+                                        alt="Black and White image of dogs playing at a beach on Lake Washington">
                 </div>
             </div>
-
         </section>
         
         <section id="architecture">
@@ -194,19 +240,60 @@
 
             <div>
                 <div class="photo-grid-right">
-                    <img class="horiz-img" src="images/home/photography/portraiture/Olive_Graffiti_2-Small.jpg" alt="Black and white, girl sitting on stool in corner of graffitied brick room, opposite window">
-                    <img class="vert-img-2" src="images/home/photography/portraiture/Lake_Washington_2-Small.jpg" alt="Black and white, three boys playing on floating platform in the water at Lake Wahington">
-                    <img class="vert-img-1" src="images/home/photography/portraiture/Maya_Plants_2-Small.jpg" alt="Girl holding leaf to cover half her face, eye visible through hole in leaf">
+                    <img class="horiz-img" srcset="images/home/photography/portraiture/DU-Trebs-2-Small.jpg 1x,
+                                            images/home/photography/portraiture/DU-Trebs-2-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/DU-Trebs-2-Small.jpg"
+                                        alt="close up of Drexel University Treblemakers acapella group girls singing">
+                    <img class="vert-img-2" srcset="images/home/photography/portraiture/Lake_Washington_2-Small.jpg 1x,
+                                            images/home/photography/portraiture/Lake_Washington_2-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/Lake_Washington_2-Small.jpg"
+                                        alt="Black and white, three boys playing on floating platform in the water at Lake Wahington">
+                    <img class="vert-img-1" srcset="images/home/photography/portraiture/DU-Trebs-5-Small.jpg 1x,
+                                            images/home/photography/portraiture/DU-Trebs-5-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/DU-Trebs-5-Small.jpg"
+                                        alt="Shot down theater with Drexel University Treblemakers acapella group girls performing together in a group">
                 </div>
                 <div class="photo-grid-left">
-                    <img class="horiz-img" src="images/home/photography/portraiture/Olive_Plants_1-Small.jpg" alt="Girl in greenhouse looking between rows of plants">
-                    <img class="vert-img-1" src="images/home/photography/portraiture/Lake_Washington_1-Small.jpg" alt="Two men resting on floating platform on Lake Washington looking out at Bellvue, Washington">
-                    <img class="vert-img-2" src="images/home/photography/portraiture/Maya_Plants_1-Small.jpg" alt="Black and white, Girl holding up a flower pot so the flower covers her left eye">
+                    <img class="horiz-img" srcset="images/home/photography/portraiture/Olive_Graffiti_2-Small.jpg 1x,
+                                            images/home/photography/portraiture/Olive_Graffiti_2-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/Olive_Graffiti_2-Small.jpg"
+                                        alt="Black and white photo of a girl sitting on a still in a graffitied brick room">
+                    <img class="vert-img-1" srcset="images/home/photography/portraiture/DU-Trebs-3-Small.jpg 1x,
+                                            images/home/photography/portraiture/DU-Trebs-3-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/DU-Trebs-3-Small.jpg"
+                                        alt="Soloist from Drexel University Treblemakers acapella group standing to sing while everyone else sits down">
+                    <img class="vert-img-2" srcset="images/home/photography/portraiture/Olive_Window-Small.jpg 1x,
+                                            images/home/photography/portraiture/Olive_Window-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/Olive_Window-Small.jpg"
+                                        alt="Black and white, girl sitting, leaning on knees on window ledge corner">                        
                 </div>
                 <div class="photo-grid-right">
-                    <img class="horiz-img" src="images/home/photography/portraiture/Maya_Plants_3-Small.jpg" alt="Black and white, Girl standing peacfully obscured by rows of vines and plants in greenouse">
-                    <img class="vert-img-1" src="images/home/photography/portraiture/Olive_Window-Small.jpg" alt="Black and white, girl sitting, leaning on knees on window ledge corner">
-                    <img class="vert-img-2" src="images/home/photography/portraiture/Olive_Graffiti_1-Small.jpg" alt="Girl sitting on stool by a window in a brick room covered in graffiti">
+                    <img class="horiz-img" srcset="images/home/photography/portraiture/Olive_Plants_1-Small.jpg 1x,
+                                            images/home/photography/portraiture/Olive_Plants_1-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/Olive_Plants_1-Small.jpg"
+                                        alt="Girl in greenhouse looking between rows of plants">
+                    <img class="vert-img-1" srcset="images/home/photography/portraiture/DU-Trebs-1-Small.jpg 1x,
+                                            images/home/photography/portraiture/DU-Trebs-1-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/DU-Trebs-1-Small.jpg"
+                                        alt="Drexel University Treblemakers acapella group girls sitting on marble stairs huggin and smiling">
+                    <img class="vert-img-2" srcset="images/home/photography/portraiture/Maya_Plants_1-Small.jpg 1x,
+                                            images/home/photography/portraiture/Maya_Plants_1-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/Maya_Plants_1-Small.jpg"
+                                        alt="Black and white, Girl holding up a flower pot so the flower covers her left eye">
+                </div>
+                <div class="photo-grid-left">
+                    <img class="horiz-img" srcset="images/home/photography/portraiture/Maya_Plants_3-Small.jpg 1x,
+                                            images/home/photography/portraiture/Maya_Plants_3-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/Maya_Plants_3-Small.jpg"
+                                        alt="Black and white, Girl standing peacfully obscured by rows of vines and plants in greenouse">
+                    <img class="vert-img-2" srcset="images/home/photography/portraiture/Lake_Washington_1-Small.jpg 1x,
+                                            images/home/photography/portraiture/Lake_Washington_1-Large.jpg 2x"
+                                        src="images/home/photography/portraiture/Lake_Washington_1-Small.jpg"
+                                        alt="Two men resting on floating platform on Lake Washington looking out at Bellvue, Washington">
+                    <img class="vert-img-1" srcset="images/home/photography/portraiture/DU-Trebs-4-Small.jpg 1x,
+                                            images/home/photography/portraiture/DU-Trebs-4-large.jpg 2x"
+                                        src="images/home/photography/portraiture/DU-Trebs-4-Small.jpg"
+                                        alt="Extreme close up of girls singing at acapella rehersal">                        
                 </div>
             </div>
 

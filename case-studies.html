@@ -5,97 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/navigation.css">
     <title>Case Studies</title>
 </head>
 <body>
     <header>
         
-        <nav>
-            <div class="overlay">
-                <label for="toggle">
-                    <img src="images/home/Hamburger-Bars.svg" alt="Hamburger Menu">
-                </label>
-                <a id="top" class="nav-logo" href="index.html"><img src="images/home/OK-Logo.svg" alt="">
+        <nav class="menu">
+            <label for="tm" id="toggle-menu"><img class="drop-icon hamburger-bars" src="images/home/Hamburger-Bars.svg" alt=""></label>
+            <input type="checkbox" id="tm">
+            <ul class="main-menu">
+                <li class="nav-link">
+                    <a href="index.html">Portfolio 
+                    <span class="drop-icon"><img class="drop-icon up-arrow" src="images/Up-Arrow.svg" alt="Arrow to Open Dropdown"></span>
+                    <label title="Toggle Drop-down" class="drop-icon" for="sm1">
+                        <img class="drop-icon up-arrow" src="images/Up-Arrow.svg" alt="">
+                    </label>
                 </a>
-            </div>
-            <input type="checkbox" id="toggle" name="toggle">
-            <ul class="nav-links">
-                <li>
-                    <div class="nav-item">
-                        <a href="index.html">Portfolio</a>
-                        <svg class="little-circle" viewBox="0 0 50 50">
-                            <circle class="light-orange" cx="24.75" cy="24.75" r="24.75"/>
-                        </svg>
-                    </div>
-                    <ul id="sub-nav-1">
-                        <li>
-                            <div class="nav-item">
-                                <a href="case-studies.html">Case Studies</a>
-                                <svg class="little-circle" viewBox="0 0 50 50">
-                                    <circle class="grey-blue" cx="24.75" cy="24.75" r="24.75"/>
-                                </svg>
-                            </div>
-                            <ul class="sub-nav-2">
-                                <li>
-                                    <div class="nav-item">
-                                        <a href="tessera.html">Tessera</a>
-                                        <svg class="little-circle" viewBox="0 0 50 50">
-                                            <circle class="rust-red" cx="24.75" cy="24.75" r="24.75"/>
-                                        </svg>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="nav-item">
-                                        <a href="riverfront-wilmington.html">Riverfront Wilmington</a>
-                                        <svg class="little-circle" viewBox="0 0 50 50">
-                                            <circle class="light-orange" cx="24.75" cy="24.75" r="24.75"/>
-                                        </svg>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="nav-item">
-                                        <a href="best-fronds.html">Best Fronds</a>
-                                        <svg class="little-circle" viewBox="0 0 50 50">
-                                            <circle class="grey-blue" cx="24.75" cy="24.75" r="24.75"/>
-                                        </svg>
-                                    </div>
-                                </li>
-                            </ul>
+                <input type="checkbox" id="sm1">
+                <ul class="sub-menu">
+                    <li class="nav-link"><a href="case-studies.html">Case Studies
+                        <span class="drop-icon"><img class="drop-icon up-arrow" src="images/Up-Arrow.svg" alt="Arrow to Open Dropdown"></span>
+                        <label title="Toggle Drop-down" class="drop-icon" for="sm2"><img class="drop-icon up-arrow" src="images/Up-Arrow.svg" alt="Arrow to Open Dropdown"></label>
+                    </a>
+                    <input type="checkbox" id="sm2">
+                    <ul class="sub-menu sub-menu2">
+                        <li class="nav-link">
+                            <svg class="nav-dot grey-blue" viewBox="0 0 50 50" fill="none">
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                            </svg>
+                            <a href="tessera.html">Tessera</a>
                         </li>
-                        <li>
-                            <div class="nav-item">
-                                <a href="photography.html">Photography</a>
-                                <svg class="little-circle" viewBox="0 0 50 50">
-                                    <circle class="rust-red" cx="24.75" cy="24.75" r="24.75"/>
-                                </svg>
-                            </div>
-                        <li>
-                            <div class="nav-item">
-                                <a href="design-and-media.html">Design & Media</a>
-                                <svg class="little-circle" viewBox="0 0 50 50">
-                                    <circle class="light-orange" cx="24.75" cy="24.75" r="24.75"/>
-                                </svg>
-                            </div>
+                        <li class="nav-link">
+                            <svg class="nav-dot rust-red" viewBox="0 0 50 50" fill="none">
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                            </svg>
+                            <a href="riverfront-wilmington.html">Riverfront<br>Wilmington</a>
+                        </li>
+                        <li class="nav-link">
+                            <svg class="nav-dot light-orange" viewBox="0 0 50 50" fill="none">
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                                <circle cx="24.75" cy="24.75" r="24.75"/>
+                            </svg>
+                            <a href="best-fronds.html">Best Fronds</a>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <div class="nav-item">
-                        <a href="about.html">About</a>
-                        <svg class="little-circle" viewBox="0 0 50 50">
-                            <circle class="grey-blue" cx="24.75" cy="24.75" r="24.75"/>
-                        </svg>
-                    </div>
-                </li>
-                <li>
-                    <div class="nav-item">
-                        <a href="resume.html">Resume</a>
-                        <svg class="little-circle" viewBox="0 0 50 50">
-                            <circle class="rust-red" cx="24.75" cy="24.75" r="24.75"/>
-                        </svg>
-                    </div>
+                    <span class="expand-dot2 light-orange"></span>
+                    <span class="expand-dot-longer rust-red"></span>
+    
                     </li>
-            </ul>
+                    <li class="nav-link">
+                        <svg class="nav-dot grey-blue" viewBox="0 0 50 50" fill="none">
+                            <circle cx="24.75" cy="24.75" r="24.75"/>
+                            <circle cx="24.75" cy="24.75" r="24.75"/>
+                        </svg>
+                        <a href="photography.html">Photography</a>
+                    </li>
+                    <li class="nav-link">
+                        <svg class="nav-dot rust-red" viewBox="0 0 50 50" fill="none">
+                            <circle cx="24.75" cy="24.75" r="24.75"/>
+                            <circle cx="24.75" cy="24.75" r="24.75"/>
+                        </svg>
+                        <a href="design-and-media.html">Design & Media</a>
+                    </li>
+                </ul>
+                <span class="expand-dot rust-red"></span>
+    
+                </li>
+                <li class="nav-link">
+                    <svg class="nav-dot grey-blue" viewBox="0 0 50 50" fill="none">
+                        <circle cx="24.75" cy="24.75" r="24.75"/>
+                        <circle cx="24.75" cy="24.75" r="24.75"/>
+                    </svg>
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-link"><svg class="nav-dot light-orange" viewBox="0 0 50 50" fill="none">
+                    <circle cx="24.75" cy="24.75" r="24.75"/>
+                    <circle cx="24.75" cy="24.75" r="24.75"/>
+                </svg>
+                <a href="resume.html">Resume</a>
+            </li>
+            </ul> 
         </nav>
 
         <div class="header-space"></div>

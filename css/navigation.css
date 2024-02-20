@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'Averia Serif Libre';
+    src: url('../fonts/averia_serif_libre/averiaseriflibre-bold-webfont.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html{
+    --background:#FFF9EE;
+    --light-orange:#F28F3B;
+    --rust-red:#D06C58;
+    --grey-blue:#5D9292;
+    --dark-text:#222222;
+    --nav-background:#F2E8D7;
+    --Averia: 'Averia Serif Libre',Times, serif;
+}
+
+/*Nav Dot Animations*/
+
+.nav-dot{
+    transition-property: height;
+    transition-duration: 1s;
+    position: absolute;
+    left: 20px;
+    top: -5px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50vw;
+}
+
+.expand-dot, .expand-dot2{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50vw;
+    left: 20px;
+    top:-5px;
+    z-index: -20;
+    transition: height 0;
+}
+
+.expand-dot-longer{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50vw;
+    left: -45px;
+    top: 130px;
+    visibility: hidden;
+    transition: height 0;
+}
+
+#sm1:checked ~ .expand-dot {
+    height: 265px;
+    transition: height .3s ease-in-out;
+}
+
+#sm2:checked ~ .expand-dot-longer{
+    visibility: visible;
+    height: 305px;
+    transition: height .3s ease-in-out;
+}
+
+#sm2:checked ~ .expand-dot2 {
+    height: 280px;
+    transition: height .3s ease-in-out;
+}
+
+
+
+/**/
+
+.rust-red{
+    background-color: var(--rust-red);
+}
+
+.light-orange{
+    background-color: var(--light-orange);
+}
+
+.grey-blue{
+    background-color: var(--grey-blue);
+}
+
+body{
+    margin: 0;
+}
+
+li.nav-link{
+    padding: 10px 0px;
+}
+
+.menu{
+    margin: 0 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0));
+    font-family: var(--Averia);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu .main-menu {
+    display: none;
+}
+
+#toggle-menu{
+    height: 50px;
+}
+
+#tm:checked + .main-menu {
+    display: block;
+}
+
+.menu input[type="checkbox"], 
+.menu ul span.drop-icon {
+    display: none;
+}
+
+.menu .sub-menu {
+    margin-left: 65px;
+    border-radius: 25px;
+}
+
+.menu .sub-menu li:last-child {
+    border-width: 0;
+}
+
+.menu li, 
+#toggle-menu, 
+.menu a {
+    position: relative;
+    display: block;
+    color: var(--dark-text);
+    text-decoration: none;
+}
+
+.menu, 
+#toggle-menu {
+    background-color:var(--nav-background);
+}
+
+#toggle-menu, 
+.menu a {
+    padding: 10px 50px;
+    border-radius: 50vw;
+}
+
+.menu a {
+    transition: all .125s ease-in-out;
+    -webkit-transition: all .125s ease-in-out;
+}
+
+.menu .sub-menu {
+    display: none;
+}
+
+.menu input[type="checkbox"]:checked + .sub-menu {
+    display: block;
+}
+
+.hamburger-bars{
+    height: 30px;
+    margin: 10px 0;
+    right: 0 !important;
+
+}
+
+.up-arrow{
+    height: 20px;
+    transform: scaleY(-1);
+}
+
+#toggle-menu .drop-icon, 
+.menu li label.drop-icon {
+    position: absolute;
+    right: 50px;
+}
+
+.menu label.drop-icon, #toggle-menu span.drop-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 16px;
+    text-align: center;
+
+}
+
+@media only screen and (max-width:400px){
+    .menu{
+        font-size: 7.5vw;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    
+    #toggle-menu .drop-icon, 
+    .menu li label.drop-icon {
+    position: absolute;
+    right: 50px;
+    }
+
+    .menu .main-menu {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items:end;
+        margin-top: 0;
+    }
+
+    .menu{
+        border-radius: 0;
+        margin: 0;
+        font-size: 20px;
+        filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0));
+    }
+
+    .up-arrow{
+        height: 15px;
+    }
+
+    .menu a{
+        padding: 10px 20px;
+    }
+
+    .menu .sub-menu li:last-child{
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .menu .sub-menu .sub-menu li:first-child{
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    .nav-dot{
+        visibility: hidden;
+    }
+    .expand-dot, .expand-dot2{
+        visibility: hidden;
+    }
+
+    #sm2:checked ~ .expand-dot-longer{
+        visibility: hidden;
+    }
+
+    #toggle-menu, 
+    .menu label.drop-icon {
+        display: none;
+    }
+
+    .menu ul span.drop-icon {
+        display: inline-block;
+    }
+
+    .menu li {
+        float: left;
+        border-width: 0 1px 0 0;
+    }
+
+    .menu .sub-menu li {
+        float: none;
+    }
+
+    .menu .sub-menu {
+        border-width: 0;
+        margin: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 200px;
+        z-index: 3000;
+        max-width: 150%;
+    }
+
+    .menu .sub-menu, 
+    .menu input[type="checkbox"]:checked + .sub-menu {
+        display: none;
+    }
+
+    .menu .sub-menu li {
+        border-width: 0 0 1px;
+    }
+
+    .menu .sub-menu .sub-menu {
+        top: 20px;
+        left: 100%;
+    }
+
+    .menu li:hover > input[type="checkbox"] + .sub-menu {
+        display: block;
+    }
+
+    li.nav-link{
+        background-color: var(--nav-background);
+    }
+
+}
