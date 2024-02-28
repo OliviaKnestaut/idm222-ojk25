@@ -318,6 +318,7 @@ div.page-title{
     flex-direction: column;
     width: 100vw;
     margin-top: 4vw;
+    position: relative;
 }
 
 .sub-header-left{
@@ -478,7 +479,7 @@ div.right-align > h2{
     align-items: center;
     display: flex;
     flex-direction: column;
-    position: relative;
+    
 }
 
 .big-circle{
@@ -778,7 +779,7 @@ div.right-align > h2{
 
 
 /*Tablet Screens*/
-@media (min-width: 600px) {
+@media (min-width: 670px) {
 
     h1{
         font-size: 16vw;
@@ -819,6 +820,10 @@ div.right-align > h2{
     }
 
     /*Common Header*/
+    .common-header{
+        margin-top: 2vw;
+    }
+
     picture.common-header{
         border-radius: 50vw;
         width: 60vw;
@@ -829,15 +834,16 @@ div.right-align > h2{
         display: block;
         position: absolute;
         width: 25vw;
-        top: 40vw;
-        left: 5vw;
+        top: 10vw;
+        left: 9vw;
+        z-index: -1;
     }
 
     .right-dot-full {
         display: block;
         position: absolute;
-        width: 20vw;
-        top: 20vw;
+        width: 18vw;
+        top: -2vw;
         left: 70vw;
         z-index: -10;
     }
@@ -897,6 +903,7 @@ div.right-align > h2{
     .case-study > img.left{
         filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.40));
         margin-right: 8px;
+        margin-left: 0;
         margin-top: -35px;
         width: 300px;
     }
@@ -943,15 +950,24 @@ div.right-align > h2{
 @media (min-width: 1200px) {
     
     h1{
-        font-size: 10vw;
+        font-size: 8.75vw;
     }
 
     h4{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     p.snippit {
-        font-size: 2vw;
+        font-size: 1.75vw;
+        letter-spacing: -0.05vw;
+        margin: 0 1vw;
+    }
+
+    .button {
+        border-radius: 50vw;
+        border-width: .75vw;
+        margin: .25vw;
+        padding: 1.5vw;
     }
 
     /*Common Header*/
@@ -959,15 +975,15 @@ div.right-align > h2{
     .left-dot-full {
         display: block;
         position: absolute;
-        width: 15vw;
-        top: 37vw;
-        left:9vw;
+        width: 16vw;
+        top: 9vw;
+        left: 13vw;
     }
 
     .right-dot-full {
         width: 10vw;
-        top: 25vw;
-        left: 75vw;
+        top: 1vw;
+        left: 74vw;
     }
     
     div.page-title img{
@@ -996,74 +1012,101 @@ div.right-align > h2{
     /*HOME PAGE*/
 
     .home-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1;
-        grid-template-areas:
-        'case-study-bubbles home-header';
-    }
-
-    .home-header{
-        grid-area: home-header;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .case-study-bubbles{
-        grid-area: case-study-bubbles;
+        width: 50%;
     }
+    .home-header{
+        width: 50%;
+    }
+
     .home-header-title{
         margin-right: 1vw;
     }
 
     .big-logo{
-        width: 30vw;
-        top:8vw;
+        width: 25vw;
+        top:7vw;
         left: -2vw;
     }
 
     .round-img{
-        width: 37vw;
+        width: 32vw;
     }
 
     .rounded-text {
-        top: -9vw;
+        top: -7vw;
         right: 1vw;
-        width: 40vw;
+        width: 34vw;
     }
 
     .case-study > img.left, .case-study > img.right{
-        width: 21vw;
+        width: 20vw;
+        z-index: -1;
     }
 
     .case-study > img.left{
-        margin-top: -55px;
+        margin-top: -1.5vw;
+        z-index: -1;
+
     }
     
 
     .case-study > div {
-        width: 18vw;
+        width: 17vw;
     }
 
     div.right-align > h2 {
-        font-size: 3.5vw;
+        font-size: 3.25vw;
     }
 
     div.left-align > h2 {
-        font-size: 4.5vw;
+        font-size: 4vw;
         line-height: 1em;
+        margin: .5vw;
+    }
+
+    .arrow-button {
+        font-size: 3.5vw;
+        line-height: 2.5vw;
+    }
+
+    div.left-align a.button, div.right-align a.button {
+        margin-top: 0.5vw;
+        padding-bottom: 2vw;
+        width: 3.1vw;
     }
 
     .home-section{
-        height: 25vw;
+        height: 23vw;
+        width: 40vw;
     }
 
     .big-circle{
-        width: 20vw;
-        margin-top: -22vw;
+        width: 18vw;
+        margin-top: -20vw;
     }
 
     .case-study{
-        height: 20vw;
-        padding-top: 5vw;
+        height: 21vw;
+    }
+
+    #case-study-2{
+        margin-right: 5vw;
+    }
+    #case-study-1, #case-study-3{
+        margin-left: 18vw;
+    }
+
+    #case-study-2, #case-study-3, .home-header{
+        margin-top: -5vw;
+    }
+
+    footer{
+        height: 0;
     }
 
 
