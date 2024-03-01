@@ -785,9 +785,9 @@ div.right-align > h2{
         font-size: 16vw;
     }
 
-    h2{
-        font-size: 12vw;
-        margin: 1vw 5vw;
+    h2 {
+        font-size: 10vw;
+        margin: 1vw 18vw;
     }
 
     h3{
@@ -821,7 +821,7 @@ div.right-align > h2{
 
     /*Common Header*/
     .common-header{
-        margin-top: 2vw;
+        margin-top: 2.5vw;
     }
 
     picture.common-header{
@@ -833,10 +833,10 @@ div.right-align > h2{
     .left-dot-full {
         display: block;
         position: absolute;
-        width: 25vw;
-        top: 10vw;
-        left: 9vw;
-        z-index: -1;
+        width: 21vw;
+        top: 13vw;
+        left: 7vw;
+        z-index: -2;
     }
 
     .right-dot-full {
@@ -864,11 +864,7 @@ div.right-align > h2{
     
     div.page-title{
         margin-top: -6vw;
-    }
-
-    div.page-title > h2 {
-        font-size: 10vw;
-        margin-left: 20vw
+        z-index: -1;
     }
 
     /*Home Page*/
@@ -931,13 +927,13 @@ div.right-align > h2{
     /*Photography Page*/
     .photo-button-grid{
         margin: 0 15vw;
-        margin-top: 5vw;
+        margin-top: 0vw;
     }
     
     .photo-button-grid a {
         width: 20vw;
         margin-top: 4vw;
-        margin-bottom: 5vw;
+        margin-bottom: 2vw;
     }
     
     .photo-button-grid a p{
@@ -951,6 +947,11 @@ div.right-align > h2{
     
     h1{
         font-size: 8.75vw;
+    }
+
+    h3 {
+        font-size: 6vw;
+        margin: 12.5vw 1vw 3vw 1vw;
     }
 
     h4{
@@ -972,19 +973,28 @@ div.right-align > h2{
 
     /*Common Header*/
 
+    .common-header {
+        margin-top: 1.5vw;
+    }
+
+    .sub-header-left {
+        margin-left: 3.5vw;
+    }
+
     .left-dot-full {
         display: block;
         position: absolute;
-        width: 16vw;
-        top: 9vw;
-        left: 13vw;
+        width: 15vw;
+        top: 7vw;
+        left: 14vw;
     }
 
     .right-dot-full {
         width: 10vw;
-        top: 1vw;
+        top: -1vw;
         left: 74vw;
     }
+    
     
     div.page-title img{
         display: none;
@@ -994,10 +1004,10 @@ div.right-align > h2{
         display: none;
     }
     
-    div.page-title img.med-dot{
+    div.page-title img.med-dot {
         display: block;
-        top:-7vw;
-        width: 15vw;
+        top: -5vw;
+        width: 10vw;
     }
     
     div.page-title{
@@ -1005,8 +1015,9 @@ div.right-align > h2{
     }
 
     div.page-title > h2 {
-        font-size: 10vw;
-        margin-left: 20vw
+        font-size: 8.5vw;
+        margin-left: 21vw;
+        margin-top: -1vw;
     }
 
     /*HOME PAGE*/
@@ -1051,9 +1062,7 @@ div.right-align > h2{
     .case-study > img.left{
         margin-top: -1.5vw;
         z-index: -1;
-
     }
-    
 
     .case-study > div {
         width: 17vw;
@@ -1112,6 +1121,21 @@ div.right-align > h2{
 
     /*Photography Page*/
     
+    .photo-button-grid a {
+        width: 125px;
+        margin-top: 10px;
+        margin-bottom: -50px;
+    }
+
+    .photo-button-grid a p {
+        font-size: 16px;
+        margin-top: -76px;
+    }
+
+    .photo-button-grid {
+        margin: 0 30vw;
+        margin-top: 0;
+    }
 
     .photo-grid-left{
         display: grid;
