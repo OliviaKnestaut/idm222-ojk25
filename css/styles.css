@@ -263,6 +263,7 @@ a.in-text-link{
     align-items: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 
@@ -308,6 +309,10 @@ div.page-title{
     position: relative;
 }
 
+#case-studies-title{
+    align-self: auto;
+}
+
 .page-title h2{
     margin-top: -2vw;
 }
@@ -318,7 +323,6 @@ div.page-title{
     flex-direction: column;
     width: 100vw;
     margin-top: 4vw;
-    position: relative;
 }
 
 .sub-header-left{
@@ -327,7 +331,7 @@ div.page-title{
 }
 
 div.header-space{
-    margin-top: 25vw;
+    margin-top: 15vw;
 }
 
 /*BUTTON LOGISTICS*/
@@ -488,7 +492,6 @@ div.right-align > h2{
     z-index: -5;
 }
 
-
 /*PHOTOGRAPHY PAGE*/
 
 .photo-button-grid{
@@ -567,7 +570,7 @@ div.right-align > h2{
     margin: 1vw;
 }
 .media-vid{
-    border-radius: 3vw;
+    border-radius: 10px;
     filter: drop-shadow(0vw 2vw 2vw rgba(0, 0, 0, 0.40));
     margin-top: 7vw;
     width: 70vw;
@@ -587,23 +590,35 @@ div.right-align > h2{
 }
 
 .media-item{
-    align-items: center;
-    display: flex;
     margin: 5vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-.media-item img{
-    border-radius: 3vw;
-    margin: 2vw;
-    width: 55vw;
+.media-item img {
+    width: 90vw;
 }
 
 .media-item div{
-    width: 43vw;
+    display: flex;
+    align-items: center;
+}
+
+picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .media-item h5, .media-item p{
-    margin: 2vw;
+    margin: 1vw;
+}
+
+.video-pair{
+    display: flex;
+    flex-direction: column;
 }
 
 /*CASE STUDIES*/
@@ -725,10 +740,14 @@ div.right-align > h2{
     margin: 10vw 5vw 2vw 0;
 }
 
-.vert-img{
-    border-radius: 30vw;
+.vert-img img{
+    border-radius: 50vw;
     margin: 5vw;
     width: 35vw;
+}
+
+.tablet-flex{
+    width: 55vw;
 }
 
 .social-icons{
@@ -748,6 +767,10 @@ div.right-align > h2{
     position: absolute;
     top: 75vw;
     width: 20vw;
+}
+
+.lower-in-touch-dot {
+    display: none;
 }
 
 
@@ -775,9 +798,6 @@ div.right-align > h2{
     width: 35vw;
 }
 
-
-
-
 /*Tablet Screens*/
 @media (min-width: 670px) {
 
@@ -787,13 +807,21 @@ div.right-align > h2{
 
     h2 {
         font-size: 10vw;
-        margin: 1vw 18vw;
+        margin: 2vw 18vw;
     }
 
     h3{
         font-size: 9vw; /*~43px on mobile*/
     }
 
+    p {
+        font-size: 18px;
+    }
+
+    section p, section h5 {
+        margin: 20px auto;
+        width: 60vw;
+    }
 
     p.snippit{
         font-size: 25px;
@@ -808,20 +836,24 @@ div.right-align > h2{
         padding: 16px;
     }
     
-    .arrow-button{
-        font-size: 55px;
-        line-height: 40px;
+    .arrow-button {
+        font-size: 65px;
+        line-height: 45px;
     }
     
     div.left-align a.button, div.right-align a.button {
         margin-top: 4px;
-        padding-bottom: 22px;
-        width: 45px;
+        padding-bottom: 27px;
+        width: 58px;
     }
 
     /*Common Header*/
     .common-header{
         margin-top: 2.5vw;
+    }
+
+    .page-title h2 {
+        margin-top: 7vw;
     }
 
     picture.common-header{
@@ -832,20 +864,18 @@ div.right-align > h2{
 
     .left-dot-full {
         display: block;
-        position: absolute;
         width: 21vw;
-        top: 13vw;
-        left: 7vw;
         z-index: -2;
+        margin-right: 56vw;
+        margin-top: -16vw;
     }
 
     .right-dot-full {
         display: block;
-        position: absolute;
         width: 18vw;
-        top: -2vw;
-        left: 70vw;
         z-index: -10;
+        margin-left: 57vw;
+        margin-top: -33.5vw;
     }
     
     div.page-title img{
@@ -865,6 +895,10 @@ div.right-align > h2{
     div.page-title{
         margin-top: -6vw;
         z-index: -1;
+    }
+
+    div.header-space{
+        display: none;
     }
 
     /*Home Page*/
@@ -895,6 +929,10 @@ div.right-align > h2{
         line-height: 45px;
         margin: 4px;
     }
+
+    .home-project-title{
+        margin-top: 25px !important;
+    }
     
     .case-study > img.left{
         filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.40));
@@ -924,6 +962,87 @@ div.right-align > h2{
         margin-top: -410px;
     }
     
+    /*ABOUT Page*/
+    .in-touch-section p{
+        margin: auto;
+        width: 30vw;
+    }
+
+    .skill-icons {
+        display: flex;
+        margin-left: 10vw;
+    }
+
+    .right-title {
+        top: -1vw;
+        z-index: 3;
+    }
+
+    .skill-icons img {
+        height: 6.75vw;
+        margin: 1.5vw;
+        width: auto;
+    }
+
+    .skill-dot{
+        display: none;
+    }
+
+    .skill-dot-2 {
+        position: absolute;
+        top: 14vw;
+        right: -42vw;
+    }
+
+    #skill-icons {
+        margin-top: 8vw;
+    }
+
+    .vert-img img{
+        width: 30vw;
+    }
+
+    .about-dot {
+        top: 52vw;
+        width: 15vw;
+    }
+
+    .in-touch {
+        margin-top: 20vw;
+    }
+
+    .in-touch .page-title h2 {
+        margin: 0 0 -12vw 32vw;
+    }
+
+    .in-touch-dot-2{
+        position: absolute;
+        top: 11vw;
+        right: 1vw;
+    }
+
+    .tablet-flex{
+        display: flex;
+        flex-direction: row;
+    }
+    .tablet-flex div{
+        margin: auto;
+    }
+
+    .social-icons{
+        margin-left: 0;
+    }
+
+    .social-icons img {
+        margin: 2vw;
+        width: 7vw;
+    }
+
+    .lower-in-touch-dot {
+        display: none;
+    }
+
+
     /*Photography Page*/
     .photo-button-grid{
         margin: 0 15vw;
@@ -941,12 +1060,50 @@ div.right-align > h2{
         margin-top: -12vw;
     }
 
+    /*Media Page*/
+
+    .video-pair{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .media-vid{
+        width: 35vw;
+    }
+
+    .vid-title{
+        font-size: 6vw;
+    }
+
+    .media-huge-circle {
+        top: 4vw;
+        width: 46vw;
+    }
+
+    .media-section {
+        margin: 0;
+        width: 48vw;
+    }
+
+    .media-section p{
+        font-size: 2.5vw;
+        margin-top: -1vw;
+    }
+
+
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     
     h1{
         font-size: 8.75vw;
+    }
+
+    h2 {
+        font-size: 8vw;
+        margin: 2vw 18vw;
     }
 
     h3 {
@@ -957,9 +1114,21 @@ div.right-align > h2{
     h4{
         font-size: 3.5vw;
     }
+    h5{
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    section p, section h5 {
+        margin: 20px auto;
+        width: 45vw;
+    }
 
     p.snippit {
-        font-size: 1.75vw;
+        font-size: 1.5vw;
         letter-spacing: -0.05vw;
         margin: 0 1vw;
     }
@@ -983,16 +1152,15 @@ div.right-align > h2{
 
     .left-dot-full {
         display: block;
-        position: absolute;
         width: 15vw;
-        top: 7vw;
-        left: 14vw;
+        margin-right: 57vw;
+        margin-top: -11vw;
     }
 
     .right-dot-full {
         width: 10vw;
-        top: -1vw;
-        left: 74vw;
+        margin-left: 57vw;
+        margin-top: -22vw;
     }
     
     
@@ -1015,9 +1183,9 @@ div.right-align > h2{
     }
 
     div.page-title > h2 {
-        font-size: 8.5vw;
+        font-size: 8vw;
         margin-left: 21vw;
-        margin-top: -1vw;
+        margin-top: 7.5vw;
     }
 
     /*HOME PAGE*/
@@ -1101,6 +1269,7 @@ div.right-align > h2{
 
     .case-study{
         height: 21vw;
+        margin-left: -2vw;
     }
 
     #case-study-2{
@@ -1114,10 +1283,83 @@ div.right-align > h2{
         margin-top: -5vw;
     }
 
+
     footer{
         height: 0;
     }
 
+    /*About Info*/
+
+        /*Skills Section*/
+
+    .right-title {
+    top: -3vw;
+    right: 8vw;
+    }
+
+    .skill-icons img {
+        height: 4.5vw;
+        margin: 1vw;
+        width: auto;
+    }
+
+    .skill-icons {
+        display: flex;
+        margin-left: 26vw;
+    }
+
+    .skill-dot-2 {
+        position: absolute;
+        top: 9.5vw;
+        right: -36vw;
+    }
+
+    #skill-icons {
+        margin-top: 4vw;
+    }
+
+        /*In Touch Section*/
+
+    .in-touch {
+        margin-top: 12vw;
+    }
+
+    .in-touch-section p {
+        margin: auto;
+        width: 15vw;
+    }
+
+    .tablet-flex {
+        width: 34vw;
+    }
+
+    .vert-img img {
+        width: 20vw;
+        margin: 9vw 3vw 5vw 17vw;
+    }
+
+    .in-touch-dot-2 {
+        position: absolute;
+        top: 8vw;
+        right: 1.5vw;
+    }
+
+    .about-dot{
+        display: none;
+    }
+
+    .lower-in-touch-dot {
+        position: absolute;
+        top: 53vw;
+        right: 17.5vw;
+        z-index: 4;
+        width: 12vw;
+    }
+
+    .social-icons img {
+        margin: 1vw;
+        width: 4vw;
+    }
 
     /*Photography Page*/
     
@@ -1162,11 +1404,70 @@ div.right-align > h2{
         justify-content: center;
     }
 
+    /*CASE STUDY PAGE*/
+    
+    #case-study-page-1, #case-study-page-3 {
+        margin-left: 0;
+    }
+
+    .home-section {
+        height: 23vw;
+        width: auto;
+    }
+
+    /*Media & Design*/
+    .media-section{
+        margin-bottom: 5vw;
+        width: 33vw;
+    }
+
+    .media-huge-circle{
+        top: 0;
+        width: 30vw;
+    }
+
+    .media-vid{
+        margin-top: 2vw;
+        width: 22vw;
+        filter: drop-shadow(0vw 1vw 1vw rgba(0, 0, 0, 0.40));
+    }
+
+    .vid-title {
+        font-size: 3.5vw;
+    }
+
+    .video-pair {
+        justify-content: center;
+    }
+
+    .desktop-flex{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items:flex-start;
+    }
+
+    .media-item{
+        margin: 1vw;
+    }
+
+    .media-item-2 img{
+        height: 46.5vw !important;
+    }
+
+    .media-item img{
+        height: 38vw;
+        width: auto;
+    }
+
+    .media-item h5, .media-item p {
+        width: auto;
+    }
+    
+    
+
+
 
 
     
-}
-
-@media (min-width: 1300px) {
-
 }

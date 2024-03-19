@@ -146,7 +146,7 @@ li.nav-link{
 
 #toggle-menu, 
 .menu a {
-    padding: 10px 50px;
+    padding: 10px 0 10px 50px;
     border-radius: 50vw;
 }
 
@@ -184,18 +184,43 @@ li.nav-link{
 .menu label.drop-icon, #toggle-menu span.drop-icon {
     border-radius: 50%;
     width: 30px;
-    height: 16px;
+    height: 20px;
     text-align: center;
-
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:390px){
+
+    #toggle-menu .drop-icon, .menu li label.drop-icon {
+        position: absolute;
+        right: 20px;
+    }
+
+    li.nav-link {
+        padding: 12px 0px;
+    }
+
     .menu{
-        font-size: 7.5vw;
+        font-size: 16px;
+    }
+
+    #sm1:checked ~ .expand-dot {
+        height: 237px;
+        transition: height .3s ease-in-out;
+    }
+
+    #sm2:checked ~ .expand-dot2 {
+        height: 255px;
+        transition: height .3s ease-in-out;
+    }
+
+    #sm2:checked ~ .expand-dot-longer {
+        visibility: visible;
+        height: 255px;
+        transition: height .3s ease-in-out;
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
     
     #toggle-menu .drop-icon, 
     .menu li label.drop-icon {
