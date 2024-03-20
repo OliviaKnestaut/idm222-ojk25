@@ -383,31 +383,6 @@ a.grey-blue:hover{
     transition: 100ms;
 }
 
-.back-to-top{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10vw;
-    margin-top: 5vw;
-    position: relative;
-}
-
-.back-to-top-circle{
-    width: 14vw;
-}
-.back-to-top div img{
-    width: 7vw;
-}
-.back-to-top div{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 2vw;
-}
-.back-to-top h5{
-    margin: 0;
-}
 
 /* Home Page & Case Study Page */
 
@@ -790,12 +765,19 @@ picture{
     width: 50vw;
     z-index: -10;
 }
+.resume-dot-2{
+    display: none;
+}
 
 .download-button{
     position: absolute;
     right: 2vw;
     top: 13vw;
     width: 35vw;
+}
+
+.body-dot{
+    display: none;
 }
 
 /*Tablet Screens*/
@@ -818,7 +800,7 @@ picture{
         font-size: 18px;
     }
 
-    section p, section h5 {
+    section p, section h5{
         margin: 20px auto;
         width: 60vw;
     }
@@ -1060,6 +1042,10 @@ picture{
         margin-top: -12vw;
     }
 
+    #photography .med-dot, #design-media .med-dot{
+        visibility: visible;
+    }
+
     /*Media Page*/
 
     .video-pair{
@@ -1092,6 +1078,75 @@ picture{
         margin-top: -1vw;
     }
 
+    /*RESUME PAGE*/
+
+    .resume-header {
+        margin-bottom: -42vw;
+        margin-top: 4vw;
+        position: initial;
+    }
+
+    .resume-dot{
+        display: none;
+    }
+
+    .resume-dot-2 {
+        display: block;
+        width: 40vw;
+        margin-top: -18vw;
+        margin-right: -51vw;
+        z-index: -3;
+    }
+
+    .download-button{
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 24vw;
+        z-index: -1;
+    }
+
+    .resume-header a {
+        position: relative;
+        top: -29vw;
+        right: -25vw;
+    }
+
+    #resume p, #resume h5, #resume  ul {
+        margin: 20px auto;
+        width: 75vw;
+    }
+
+    .resume-item h5, #resume-skills h5, #affiliations h5{
+        font-size: 25px;
+    }
+
+    .resume-item ul{
+        font-size: 16px;
+        line-height: 170%;
+    }
+
+    .body-dot {
+        display: block;
+        position: absolute;
+        width: 126px;
+        top: -41px;
+        left: 30px;
+        z-index: -2;
+    }
+    
+    .page-title .med-dot{
+        visibility: hidden;
+    }
+
+    #resume .sub-header-left {
+        margin-left: 80px;
+    }
+
+    #resume h3{
+        font-size: 55px;
+        margin: 125px 0 40px 0;
+    }
 
 }
 
@@ -1464,10 +1519,56 @@ picture{
         width: auto;
     }
     
-    
+    /*RESUME*/
+    .resume-dot-2 {
+        width: 25vw;
+        margin-top: -13vw;
+        margin-right: -41vw;
+    }
+
+    .resume-header a {
+        top: -19vw;
+        right: -20.5vw;
+    }
+
+    .download-button {
+        width: 15vw;
+    }
+
+    .resume-header {
+        margin-bottom: -25vw;
+        margin-top: 0;
+    }
+
+    .desktop-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        'courses skills'
+        'affiliations awards';
+        justify-items: center;
+        align-items:flex-start;
+        margin-bottom: 150px;
+    }
+
+    #academic-courses{
+        grid-area: courses;
+    }
+    #resume-skills{
+        grid-area: skills;
+    }
+    #affiliations{
+        grid-area: affiliations;
+    }
+    #awards{
+        grid-area: awards;
+    }
+    .desktop-grid p, .desktop-grid h5, .desktop-grid ul{
+        width: auto !important;
+        padding: 0 50px 0 85px;
+        margin: 10px !important;
+    }
 
 
-
-
-    
 }
