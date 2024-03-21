@@ -36,7 +36,7 @@ html{
     left: 20px;
     top:-5px;
     z-index: -20;
-    transition: height 1px;
+    transition: height .1s;
 }
 
 .expand-dot-longer{
@@ -47,7 +47,7 @@ html{
     left: -45px;
     top: 130px;
     visibility: hidden;
-    transition: height 1px;
+    transition: height .1s;
 }
 
 #sm1:checked ~ .expand-dot {
