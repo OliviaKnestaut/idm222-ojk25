@@ -179,6 +179,7 @@ li.nav-link{
 .menu li label.drop-icon {
     position: absolute;
     right: 50px;
+    z-index: 3001;
 }
 
 .menu label.drop-icon, #toggle-menu span.drop-icon {
