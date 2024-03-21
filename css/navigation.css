@@ -256,10 +256,7 @@ li.nav-link{
         border-bottom-right-radius: 40px;
     }
 
-    .menu .sub-menu .sub-menu li:first-child{
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-    }
+
 
     .nav-dot{
         visibility: hidden;
@@ -311,7 +308,7 @@ li.nav-link{
     }
 
     .menu .sub-menu .sub-menu {
-        top: 20px;
+        top: 0px;
         left: 100%;
     }
 

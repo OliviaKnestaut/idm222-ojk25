@@ -199,8 +199,12 @@ video{
     background-color: #DDDDDD;
     border-radius: var(--rhythm);
     height: 60vw;
-    margin-top: 15vw;
     width: 90vw;
+    margin-bottom: 1vw;
+}
+
+header video{
+    margin-top: 8vw;
 }
 
 .bold{
@@ -606,8 +610,7 @@ picture{
 }
 
 .huge-circle{
-    position: absolute;
-    top: 10vw;
+    margin-top: -80vw;
     width: 90vw;
     z-index: -6;
 }
@@ -618,8 +621,8 @@ picture{
 
 .case-study-header img{
     filter: drop-shadow(0vw 2vw 2vw rgba(0, 0, 0, 0.40));
-    margin-bottom: 0;
     width: 92vw;
+    margin-bottom: 5vw;
 }
 
 .case-study-header h2{
@@ -635,12 +638,7 @@ picture{
     align-items: center;
     display: flex;
     flex-direction: column;
-    position: relative;
     text-align: center;
-}
-
-.case-study-header img{
-    margin-bottom: 5vw;
 }
 
 .case-study-sect img{
@@ -1078,7 +1076,7 @@ picture{
         margin-top: -1vw;
     }
 
-    /*RESUME PAGE*/
+    /*RESUME */
 
     .resume-header {
         margin-bottom: -42vw;
@@ -1112,20 +1110,6 @@ picture{
         right: -25vw;
     }
 
-    #resume p, #resume h5, #resume  ul {
-        margin: 20px auto;
-        width: 75vw;
-    }
-
-    .resume-item h5, #resume-skills h5, #affiliations h5{
-        font-size: 25px;
-    }
-
-    .resume-item ul{
-        font-size: 16px;
-        line-height: 170%;
-    }
-
     .body-dot {
         display: block;
         position: absolute;
@@ -1139,13 +1123,90 @@ picture{
         visibility: hidden;
     }
 
-    #resume .sub-header-left {
-        margin-left: 80px;
-    }
+    /*CASE STUDY & RESUME*/
 
-    #resume h3{
+    #resume h3, .case-study-page h3{
         font-size: 55px;
         margin: 125px 0 40px 0;
+        margin-left: 80px;
+        margin-right: 30px;
+    }
+
+    #resume p, #resume h5, #resume  ul, .case-study-page ul, .case-study-page p, .case-study-page h5 {
+        margin: 10px auto;
+        width: 75vw;
+    }
+
+    .resume-item h5, #resume-skills h5, #affiliations h5, .case-study-sect h5{
+        font-size: 25px;
+    }
+
+    .resume-item ul, .case-study-page ul{
+        font-size: 18px;
+        line-height: 170%;
+    }
+    .resume-item{
+        margin: 30px 0;
+    }
+
+    /*CASE STUDIES*/
+    .case-study-page img{
+        width: 80vw;
+        align-self: center;
+        
+    }
+
+    .case-study-sect{
+        display: flex;
+        flex-direction: column;
+    }
+
+    video{
+        width: 85vw;
+    }
+
+    .case-study-header h2 {
+        font-size: 12vw;
+        margin-bottom: -2vw;
+    }
+
+    .case-study-header img{
+        width: 75vw;
+    }
+
+    .huge-circle{
+        width: 70vw;
+        margin-top: -65vw;
+    }
+
+    .vert-video{
+        width: 50vw;
+        height: 35vw;
+        margin: 0;
+    }
+
+    .contents-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 5vw;
+    }
+
+    div.contents {
+        font-size: 3vw;
+        line-height: 200%;
+        margin: 0;
+    }
+
+    .tiny-circle {
+        font-size: 4vw;
+        padding: 0.2vw 1.75vw 0.75vw 1.75vw;
+    }
+
+    .case-study-button {
+        font-size: 4vw;
+        width: 42vw;
     }
 
 }
@@ -1568,6 +1629,103 @@ picture{
         width: auto !important;
         padding: 0 50px 0 85px;
         margin: 10px !important;
+    }
+
+    /*CASE STUDIES*/
+    .case-study-header .snippit {
+        margin: 1vw;
+        font-size: 2vw;
+    }
+    .case-study-header h2{
+        font-size: 6vw;
+    }
+    .case-study-page ul{
+        font-size: 16px;
+    }
+
+    .case-study-header {
+        position: initial;
+    }
+
+    .case-study-header img {
+        width: 45vw;
+        filter: none;
+    }
+
+    .huge-circle {
+        width: 42vw;
+        margin-top: -41vw;
+    }
+
+    .contents-flex{
+        margin-top: 3vw;
+        justify-content: center;
+    }
+
+    .vert-video {
+        width: 40vw;
+        height: 25vw;
+    }
+
+    div.contents{
+        font-size: 2vw;
+        margin: 1vw;
+    }
+
+    .tiny-circle {
+        font-size: 3vw;
+        padding: 0 1.25vw 0.5vw 1.25vw;
+    }
+
+    video{
+        border-radius: 2vw;
+    }
+
+    .persona-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .persona-flex div{
+        width: 40vw;
+        margin-left: 11vw;
+    }
+    .persona-flex img{
+        width: 40vw;
+        margin: 0;
+        border-radius: 3vw;
+    }
+    .persona-flex div ul{
+        width: auto;
+    }
+
+    .case-study-sect img {
+        border-radius: 3vw;
+    }
+
+    .riv-wilm-circle{
+        margin-top: -37vw;
+    }
+
+    .case-study-button {
+        font-size: 2vw;
+        width: 18vw;
+    }
+
+    .flow-flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .flow-flex img{
+        width: 30vw;
+        margin: 0;
+    }
+    .flow-flex div{
+        width: 20vw;
+        align-self: self-start;
     }
 
 
