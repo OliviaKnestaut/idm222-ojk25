@@ -1354,6 +1354,7 @@ picture{
 
     div.right-align > h2 {
         font-size: 3.25vw;
+        line-height: 3vw;
     }
 
     div.left-align > h2 {
@@ -1611,6 +1612,10 @@ picture{
         justify-items: center;
         align-items:flex-start;
         margin-bottom: 150px;
+    }
+
+    .desktop-grid section{
+        width: 48vw;
     }
 
     #academic-courses{
