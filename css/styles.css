@@ -1496,6 +1496,10 @@ picture{
         margin-top: 0;
     }
 
+    .photo-button-grid a img{
+        border-radius: 50vw;
+    }
+
     .photo-grid-left{
         display: grid;
         grid-template-columns: 48.58vw 21.74vw 21.74vw;
